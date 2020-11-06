@@ -1,0 +1,273 @@
+body, p {
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+}
+
+.mainHeader {
+  height: 85px;
+  border-top: 4px solid #d20f26;
+}
+.mainHeader img {
+  margin-top: 5px;
+  width: 75px;
+  height: 75px;
+  border: 2px solid white;
+  border-radius: 3px;
+  position: relative;
+  right: -20px;
+  top: -85px;
+}
+.mainHeader .headerText {
+  width: 100%;
+  height: 100%;
+}
+.mainHeader .headerTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  background-color: rgba(0, 51, 102, 0.99);
+  padding-left: 110px;
+  padding-right: 20px;
+}
+.mainHeader .headerTop .pages a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.mainHeader .headerBottom {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50%;
+  padding-left: 120px;
+  padding-right: 20px;
+  font-size: 70%;
+  font-weight: bold;
+}
+.mainHeader .headerBottom p {
+  margin-right: 15px;
+  color: #d20f26;
+  background-color: white;
+}
+.mainHeader .headerBottom a {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: rgba(0, 51, 102, 0.99);
+}
+
+.buttons .fas {
+  color: white;
+  margin-right: 10px;
+}
+.buttons .login {
+  background-color: #1b4e81;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  font-size: 80%;
+  padding: 7px 10px 7px 10px;
+  margin-right: 5px;
+}
+.buttons .watch {
+  background-color: #d20f26;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  font-size: 80%;
+  padding: 7px 10px 7px 10px;
+}
+
+.headerSmall {
+  display: none;
+  width: 100%;
+  background-color: rgba(0, 51, 102, 0.99);
+  height: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerSmall img {
+  width: 100px;
+}
+.headerSmall .fa-bars {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.ad {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.ad img {
+  border: 1px solid black;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 100%;
+}
+.middle .west {
+  border: 1px solid lightblue;
+  margin-top: 20px;
+  background-color: white;
+  color: rgba(0, 51, 102, 0.99);
+}
+.middle .west h2 {
+  margin-left: 20px;
+}
+.middle .west .grid-container {
+  padding: 0 10px 20px 10px;
+  margin: 0 10px 10px 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+.middle .mainbar {
+  width: 70%;
+  margin: 0 5px 0 10px;
+}
+.middle .mainbar .weather {
+  background-color: white;
+  border: 1px solid lightblue;
+}
+.middle .mainbar .weather .weather-text {
+  margin: 5px 25px 20px 25px;
+}
+.middle .mainbar .weather .weather-text p {
+  color: rgba(0, 51, 102, 0.99);
+}
+.middle .mainbar .weather .text-big {
+  font-size: 30px;
+}
+.middle .sidebar {
+  margin: 80px 10px 50px 5px;
+  width: 30%;
+}
+.middle .sidebar .ad2 {
+  margin-bottom: 30px;
+}
+.middle .sidebar .img-container {
+  background-color: white;
+  border: 1px solid lightblue;
+  padding: 10px 10px 10px 10px;
+}
+.middle .sidebar .img-container p {
+  color: rgba(0, 51, 102, 0.99);
+  font-weight: bold;
+}
+.middle .sidebar .img-container .img-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid lightblue;
+  padding: 10px 0 10px 0;
+}
+.middle .sidebar .img-container .img-item img {
+  width: 45%;
+  height: 60px;
+  margin: 5px 5px 5px 0px;
+}
+.middle .sidebar .img-container .img-item .img-text {
+  margin: 5px 0px 5px 5px;
+  color: rgba(0, 51, 102, 0.99);
+}
+.middle .sidebar .img-container .img-item .video {
+  font-size: 12px;
+}
+.middle p {
+  background-color: white;
+}
+.middle img {
+  width: 100%;
+}
+
+.bottom {
+  background-color: rgba(0, 51, 102, 0.99);
+  margin-top: 50px;
+}
+.bottom .grid-container {
+  margin: 0px 20px 0px 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+}
+.bottom .grid-container .grid-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: lightblue;
+}
+.bottom .grid-container .grid-item .title {
+  font-size: 20px;
+}
+.bottom .grid-container .grid-item p {
+  background-color: rgba(0, 51, 102, 0.99);
+}
+
+@media screen and (max-width: 1040px) {
+  .mainHeader .headerTop .pages .hide1 {
+    display: none;
+  }
+
+  .middle .west {
+    margin: 20px 20px 20px 20px;
+  }
+  .middle .sidebar {
+    display: none;
+  }
+  .middle .mainbar {
+    width: 100%;
+    margin: 0;
+  }
+  .middle .mainbar h1 {
+    margin-left: 10px;
+  }
+
+  .bottom .grid-container {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .ad {
+    display: none;
+  }
+}
+@media screen and (max-width: 979px) {
+  .mainHeader .headerTop .pages .hide2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 879px) {
+  .mainHeader .headerTop .pages .hide3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainHeader {
+    display: none;
+  }
+
+  .headerSmall {
+    display: block;
+    display: flex;
+  }
+
+  .middle .west .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .bottom .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
